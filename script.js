@@ -41,6 +41,17 @@ const rental = 25;
 
 let myAge = 46;
 
-function checkAge() {
+function checkAge( myAge ) {
+    console.log(`RUNNING ...`+myAge);
+        if (myAge < lisence && myAge >= jrop ) {
 
+        }
+
+        if (myAge >= license) {
+            console.log(`you can have a regular license`);
+        }
+
+        if (myAge < jrop) {
+            console.log("your're too young to drive");
+        }
 }
