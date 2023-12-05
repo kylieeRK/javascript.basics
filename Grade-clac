@@ -23,7 +23,7 @@ function CheckGrade(e) {
         }
 
         if (myGrade >= B && myGrade < A) {
-            message += `<li> you have an B <li/>`;
+            message += `<li> you have a B <li/>`;
         }
 
         if (myGrade >= C < B) {
