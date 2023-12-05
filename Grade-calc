@@ -26,18 +26,14 @@ function CheckGrade(e) {
             message += `<li> you have a B <li/>`;
         }
 
-          if (myGrade >= C); {
-          message += `<li> you have a C <li/>`;
-          }
+          
+          
         if (myGrade >= C && myGrade < B) {
             message += `<li> you have a C <li/>`;
         }
 
-         if (myGrade >= D); {
-            message += `<li> you have a D <li/>`;
-         }
-
-        if (myGrade >= D < C) {
+        
+        if (myGrade >= D && myGrade < C) {
             message += `<li> you have a D <li/>`;
         }
     document.querySelector(`#output`).innerHTML = message;
