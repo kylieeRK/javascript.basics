@@ -1,0 +1,38 @@
+document.querySelector(`form`).addEventListener(`submit`, CheckGrade);
+
+
+const A = 90;
+const B = 80;
+const C = 70;
+const D = 60;
+
+
+let myGrade = 95;
+
+function CheckGrade(e) {
+        e.preventDefault();
+
+        let myGrade = document.querySelector(`input`).value;
+
+        let message = "";
+
+        console.log(`RUNNING ...`+myGrade);
+
+        if (myGrade >= A ) {
+            message += `<li> you have a A <li/>`;
+        }
+
+        if (myGrade >= B && myGrade < A) {
+            message += `<li> you have an B <li/>`;
+        }
+
+        if (myGrade >= C < B) {
+            message += `<li> you have a C <li/>`;
+        }
+
+        if (myGrade >= D < C) {
+            message += `<li> you have a D <li/>`;
+        }
+    document.querySelector(`#output`).innerHTML = message;
+    }
+
